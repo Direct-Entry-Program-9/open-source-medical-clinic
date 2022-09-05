@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-
 <AnchorPane prefHeight="574.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.SettingsFormController">
    <stylesheets>
       <URL value="@../css/Style.css" />
@@ -19,12 +18,12 @@
          <children>
             <Button fx:id="btnHospitalFee" mnemonicParsing="false" onAction="#btnHospitalFeeOnAction" prefHeight="42.0" prefWidth="178.0" text="HOSPITAL FEE" />
             <Button fx:id="btnDiscount" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnDiscountOnAction" prefHeight="42.0" prefWidth="178.0" text="DISCOUNT" />
-            <Button fx:id="btnManageFields" layoutX="10.0" layoutY="62.0" mnemonicParsing="false" onAction="#btnDiscountOnAction" prefHeight="42.0" prefWidth="178.0" text="MANAGE FIELDS" />
+            <Button fx:id="btnManageFields" layoutX="10.0" layoutY="62.0" mnemonicParsing="false" onAction="#btnManageFieldsOnAction" prefHeight="42.0" prefWidth="178.0" text="MANAGE FIELDS" />
             <Button fx:id="btnPassword" layoutX="10.0" layoutY="114.0" mnemonicParsing="false" onAction="#btnPasswordOnAction" prefHeight="42.0" prefWidth="178.0" text="PASSWORD" />
             <Button fx:id="btnAbout" layoutX="10.0" layoutY="166.0" mnemonicParsing="false" onAction="#btnAboutOnAction" prefHeight="42.0" prefWidth="178.0" text="ABOUT" />
          </children>
       </VBox>
-      <AnchorPane fx:id="pneContainer" layoutX="207.0" layoutY="70.0" prefHeight="316.0" prefWidth="379.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="70.0" />
+      <AnchorPane fx:id="pneContainer" layoutX="207.0" layoutY="70.0" prefHeight="490.0" prefWidth="503.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="70.0" />
       <Pane layoutX="14.0" layoutY="47.0" prefHeight="2.0" prefWidth="696.0" styleClass="line" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
    </children>
 </AnchorPane>

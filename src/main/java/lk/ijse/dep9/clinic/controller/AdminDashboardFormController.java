@@ -4,7 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.Window;
 import lk.ijse.dep9.clinic.security.SecurityContextHolder;
 
 import java.io.IOException;
@@ -23,7 +25,16 @@ public class AdminDashboardFormController {
     public void btnViewRecordsOnAction(ActionEvent actionEvent) {
     }
 
-    public void btnSettingsOnAction(ActionEvent actionEvent) {
+    public void btnSettingsOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/SettingsForm.fxml"))));
+        stage.setTitle("Open Source MEDICARE: Settings");
+        stage.setResizable(false);
+        stage.show();
+        stage.centerOnScreen();
+        Stage owner = (Stage) btnSettings.getScene().getWindow();
+        owner.hide();
+        stage.setOnCloseRequest(windowEvent -> owner.show());
     }
 
     public void btnLogOutOnAction(ActionEvent actionEvent) throws IOException {
