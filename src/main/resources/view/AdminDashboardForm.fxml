@@ -7,14 +7,10 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="290.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep9.clinic.controller.AdminDashboardFormController">
    <children>
-      <Label layoutX="89.0" layoutY="26.0" text="ADMIN DASHBOARD">
-         <font>
-            <Font name="Ubuntu Bold" size="20.0" />
-         </font>
+      <Label layoutX="89.0" layoutY="26.0" styleClass="title" text="ADMIN DASHBOARD">
       </Label>
       <ImageView fitHeight="49.0" fitWidth="55.0" layoutX="32.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
