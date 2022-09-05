@@ -47,6 +47,15 @@ public class AdminDashboardFormController {
         btnLogOut.getScene().getWindow().hide();
     }
 
-    public void btnProfileManagementOnAction(ActionEvent actionEvent) {
+    public void btnProfileManagementOnAction(ActionEvent actionEvent) throws IOException {
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ProfileManagementForm.fxml"))));
+        stage.setTitle("Open Source MEDICARE: Profile Management");
+        stage.setResizable(false);
+        stage.show();
+        stage.centerOnScreen();
+        Stage owner = (Stage) btnSettings.getScene().getWindow();
+        owner.hide();
+        stage.setOnCloseRequest(windowEvent -> owner.show());
     }
 }
