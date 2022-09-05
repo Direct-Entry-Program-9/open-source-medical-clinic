@@ -16,7 +16,7 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("/view/LoginForm.fxml"))));
-        primaryStage.setTitle("Open Source Medical Clinic");
+        primaryStage.setTitle("Open Source MEDICARE");
         primaryStage.setResizable(false);
         primaryStage.show();
         primaryStage.centerOnScreen();

@@ -81,8 +81,9 @@ public class LoginFormController {
                         scene = new Scene(FXMLLoader.load(this.getClass().getResource("/view/ReceptionistDashboardForm.fxml")));
                 }
                 Stage stage = new Stage();
-                stage.setTitle("Open Source Medical Clinic");
+                stage.setTitle("Open Source MEDICARE");
                 stage.setScene(scene);
+                stage.setResizable(false);
                 stage.show();
                 stage.centerOnScreen();
 
